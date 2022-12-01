@@ -1,0 +1,168 @@
+.errors{
+  color:red;
+  font-size: 13px;
+}
+
+.radioArrDep{
+  margin-bottom: 1.25rem;
+}
+
+.radioItems {
+  display: flex;
+  align-items: center;
+  margin-right: 3rem;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.checking {
+  width: 20px;
+  height: 20px;
+}
+
+.allRadios {
+  display: flex;
+  margin-top: 1.25rem;
+}
+
+.luggage{
+  display: flex;
+  margin-left: 12rem;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.luggageSelector{
+  margin-top: 6px;
+  width: 2.1rem;
+  height: 18px;
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 11px;
+  padding-top: 0;
+}
+
+.orDstLabel {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+
+.wrapperArrDep {
+  width: 100%;
+  position: relative;
+}
+
+
+.selector {
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  font-size: 15px;
+  line-height: 10px;
+  padding-left: 8%;
+}
+
+.arrDepIcon {
+  color: rgb(148, 70, 182);
+  font-size: 30px;
+  line-height: 10px;
+  position: absolute;
+  left: 2%;
+  top: 38%;
+}
+
+
+.wholeDiv {
+  width: 75%;
+  height: auto;
+  align-self: center;
+  padding-bottom: 10px;
+  margin-left: 10%;
+  margin-right: 20px;
+}
+
+.radioArrDep {
+  display: grid;
+  justify-content: center;
+  margin-top: 1.25rem; /* 20px */
+}
+
+.dates {
+  display: flex;
+  justify-content: center;
+}
+
+
+.wrapperArrDepDate {
+  width: 300px;
+  position: relative;
+  padding-left: 5%;
+  flex: 1;
+}
+
+.arrDepInput {
+  width: 200px;
+  height: 40px;
+  border-radius: 8px;
+  font-size: 15px;
+  line-height: 10px;
+  align-content: space-around;
+  padding-left: 20%;
+  flex: 1;
+}
+
+.arrDepIconDate{
+  color: rgb(148, 70, 182);
+  font-size: 30px;
+  line-height: 10px;
+  position: absolute;
+  left: 9%;
+  top: 38%;
+}
+
+ul {
+  display: inline;
+}
+
+.passengerSection{
+  background-color: aqua;
+}
+
+.passengerSectionChild{
+  width: 33%;
+  float:left;
+}
+
+.selectorPassenger{
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  font-size: 15px;
+  line-height: 10px;
+  padding-left: 13%;
+}
+
+.findFlightBtn{
+  width: 100%;
+  justify-content: center;
+  border-radius: 9px;
+  border: none;
+  background-color: rgb(127, 125, 128);
+  margin-top: 30px;
+  height: 50px;
+  opacity: 0.5;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+
+.findFlightBtn:hover{
+  color: rgb(0, 0, 0);
+  opacity:0.8;
+}
