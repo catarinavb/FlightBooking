@@ -46,14 +46,14 @@ public class PriceRequestController {
 
     @GetMapping("/{id}")
     public ResponseEntity<Object> findPriceRequestById(@PathVariable("id") int priceRequestId) {
-        Optional<PriceRequestModel> priceRequestModelOptional = priceRequestService.findPriceRequestById(priceRequestId);
+        Optional<PriceRequestModel> priceRequestModelOptional = priceRequestService.findById(priceRequestId);
         if(!priceRequestModelOptional.isPresent()) return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Price Request not found.");
         return ResponseEntity.status(HttpStatus.OK).body(priceRequestModelOptional.get());
     }
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Object> deletePriceRequest(@PathVariable("id") int priceRequestId) {
-        Optional<PriceRequestModel> priceRequestModelOptional = priceRequestService.findPriceRequestById(priceRequestId);
+        Optional<PriceRequestModel> priceRequestModelOptional = priceRequestService.findById(priceRequestId);
         if(!priceRequestModelOptional.isPresent()) return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Price Request not found.");
         priceRequestService.deletePriceRequest(priceRequestModelOptional.get());
         return ResponseEntity.status(HttpStatus.OK).body("Price Request deleted successfully.");
@@ -61,7 +61,7 @@ public class PriceRequestController {
 
     @PutMapping("/{id}")
     public ResponseEntity<Object> updatePriceRequest(@PathVariable("id") int priceRequestId, @RequestBody @Valid PriceRequestDto priceRequestDto) {
-        Optional<PriceRequestModel> priceRequestModelOptional = priceRequestService.findPriceRequestById(priceRequestId);
+        Optional<PriceRequestModel> priceRequestModelOptional = priceRequestService.findById(priceRequestId);
         if(!priceRequestModelOptional.isPresent()) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Price Request not found.");
         }

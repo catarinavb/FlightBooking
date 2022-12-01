@@ -20,7 +20,7 @@ public class PriceRequestService {
         return priceRequestRepository.findAll();
     }
 
-    public Optional<PriceRequestModel> findPriceRequestById(int priceRequestId) {
+    public Optional<PriceRequestModel> findById(int priceRequestId) {
         return priceRequestRepository.findById(priceRequestId);
     }
 

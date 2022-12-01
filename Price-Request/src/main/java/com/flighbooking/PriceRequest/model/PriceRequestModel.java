@@ -8,6 +8,7 @@ import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateDeserializer;
 import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateTimeDeserializer;
 import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateSerializer;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
@@ -16,8 +17,6 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 
 @Entity
-@AllArgsConstructor
-@NoArgsConstructor
 @Table(name = "price")
 public class PriceRequestModel {
 
@@ -63,6 +62,7 @@ public class PriceRequestModel {
         this.luggage = luggage;
         this.insertionDate = insertionDate;
     }
+
 
     public Integer getPriceRequestId() {
         return priceRequestId;
